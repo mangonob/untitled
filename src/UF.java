@@ -3,11 +3,7 @@
  */
 
 
-
-
-
-
-
+import edu.princeton.cs.algs4.*;
 
 public class UF {
     private int[] id;
@@ -40,15 +36,21 @@ public class UF {
         if(i == j) return;
 
         if(sz[i] < sz[j]) {
-            
+            id[i] = j;
+            sz[j] += sz[i];
         } else {
-
-
+            id[j] = i;
+            sz[i] += sz[j];
         }
     }
 
     public boolean connected(int p, int q) {
         return find(p) == find(q);
+    }
+
+    public static void main(String[] args) {
+        int N = StdIn.readInt();
+        
     }
 }
 
