@@ -9,19 +9,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class UF {
     private int[] id;
     private int[] sz;
@@ -53,9 +40,9 @@ public class UF {
         if(i == j) return;
 
         if(sz[i] < sz[j]) {
-            id[i] = j;
-
+            
         } else {
+
 
         }
     }
