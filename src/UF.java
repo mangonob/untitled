@@ -42,17 +42,31 @@ public class UF {
             id[j] = i;
             sz[i] += sz[j];
         }
+
+        count--;
     }
 
     public boolean connected(int p, int q) {
         return find(p) == find(q);
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         int N = StdIn.readInt();
-        
+        UF uf = new UF(N);
+        while(!StdIn.isEmpty()) {
+            int p = StdIn.readInt();
+            int q = StdIn.readInt();
+            if (uf.connected(p, q)) continue;
+            uf.union(p, q);
+            //StdOut.println(p + " " + q);
+        }
+        StdOut.println(uf.count() + " components");
     }
 }
+
+
+
+
 
 
 
