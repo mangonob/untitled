@@ -35,12 +35,14 @@ public class InsertionWithSentry {
         int N = a.length;
         Comparable temp = 0;
 
-        Comparable min = null;
         if (N >= 1) {
-            min = a[0];
+            int min = 0;
             for (int i = 1; i < N; i++) {
-                if (less(a[i], min)) min = a[i];
+                if (less(a[i], a[min])) min = i;
             }
+
+
+            exch(a, 0, min);
         }
 
         for ( int i = 1; i < N ; i ++) {
