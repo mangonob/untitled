@@ -15,7 +15,11 @@ public class SortCompare {
         if(alg.equals("Insertion")) com.company.Insertion.sort(a);
         if(alg.equals("Selection")) com.company.Selection.sort(a);
         if(alg.equals("Shell")) com.company.Shell.sort(a);
+        if(alg.equals("Merge")) com.company.Merge.sort(a);
+
+        if(alg.equals("MergeBU")) com.company.MergeBU.sort(a);
         if(alg.equals("InsertionWithSentry")) com.company.InsertionWithSentry.sort(a);
+
 
         return timer.elapsedTime();
     }

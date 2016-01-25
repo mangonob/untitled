@@ -41,7 +41,6 @@ public class InsertionWithSentry {
                 if (less(a[i], a[min])) min = i;
             }
 
-
             exch(a, 0, min);
         }
 

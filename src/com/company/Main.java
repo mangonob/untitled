@@ -45,10 +45,10 @@ public class Main {
     public static void main(String[] args) {
         Integer[] a = new Integer[100];
         for (int i = 0; i < 100; i++) a[i] = StdRandom.uniform(100);
-        com.company.Shell.sort(a);
-        com.company.Shell.show(a);
-        if (com.company.Shell.isSorted(a)) {
-            System.out.println("Shell Successed!");
+        com.company.MergeBU.sort(a);
+        com.company.MergeBU.show(a);
+        if (com.company.MergeBU.isSorted(a)) {
+            System.out.println("MergeBU Successed!");
         }
     }
 }
