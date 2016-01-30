@@ -1,4 +1,4 @@
-package com.company;
+package com.company.sort;
 
 import edu.princeton.cs.algs4.StdOut;
 

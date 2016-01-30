@@ -1,4 +1,4 @@
-package com.company;
+package com.company.sort;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
@@ -12,13 +12,13 @@ public class SortCompare {
     public static double time (String alg, Comparable[] a) {
         Stopwatch timer = new Stopwatch();
 
-        if(alg.equals("Insertion")) com.company.Insertion.sort(a);
-        if(alg.equals("Selection")) com.company.Selection.sort(a);
-        if(alg.equals("Shell")) com.company.Shell.sort(a);
-        if(alg.equals("Merge")) com.company.Merge.sort(a);
+        if(alg.equals("Insertion")) Insertion.sort(a);
+        if(alg.equals("Selection")) Selection.sort(a);
+        if(alg.equals("Shell")) Shell.sort(a);
+        if(alg.equals("Merge")) Merge.sort(a);
 
-        if(alg.equals("MergeBU")) com.company.MergeBU.sort(a);
-        if(alg.equals("InsertionWithSentry")) com.company.InsertionWithSentry.sort(a);
+        if(alg.equals("MergeBU")) MergeBU.sort(a);
+        if(alg.equals("InsertionWithSentry")) InsertionWithSentry.sort(a);
 
 
         return timer.elapsedTime();

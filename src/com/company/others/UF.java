@@ -1,4 +1,4 @@
-/**
+package com.company.others; /**
  * Created by mangonob on 16/1/21.
  */
 
