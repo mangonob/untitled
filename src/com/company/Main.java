@@ -1,6 +1,7 @@
-package com.company.sort;
+package com.company;
 
-import edu.princeton.cs.algs4.*;
+import com.company.sort.*;
+import edu.princeton.cs.algs4.StdOut;
 
 public class Main {
 
