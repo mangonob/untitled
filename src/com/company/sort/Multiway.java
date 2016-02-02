@@ -4,6 +4,7 @@ package com.company.sort;
  * Created by mangonob on 16/1/31.
  */
 
+import edu.princeton.cs.algs4.Heap;
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -30,6 +31,8 @@ public class Multiway {
         In[] streams = new In[N];
         for (int i = 0; i < N; i++)
             streams[i] = new In(args[i]);
+
+
         merge(streams);
     }
 }

@@ -16,11 +16,11 @@ public class MaxPQ<Key extends Comparable<Key>> {
     }
 
     public int size() { return N; }
+
     public void insert(Key v) {
         pq[++N] = v;
         swim(N);
     }
-
     public Key delMax() {
         Key max = pq[1];
         exch(1, N--);   // 将堆尾巴元素提取到根部
@@ -28,13 +28,13 @@ public class MaxPQ<Key extends Comparable<Key>> {
         sink(1);        // 此时的根部并不是最大, 使其下沉
         return max;     // 返回原来的根部(最大)
     }
+
     private void swim(int k) {
         while (k > 1 && less(k/2, k)) {
             exch(k/2, k);
             k /= 2;
         }
     }
-
     private void sink(int k) {
         while (2*k <= N) {
             int j = 2*k;
@@ -44,7 +44,6 @@ public class MaxPQ<Key extends Comparable<Key>> {
             k = j;
         }
     }
-
     private boolean less(int i, int j){
         return pq[i].compareTo(pq[j]) < 0;
     }

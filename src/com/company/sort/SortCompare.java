@@ -19,7 +19,8 @@ public class SortCompare {
 
         if(alg.equals("MergeBU")) MergeBU.sort(a);
         if(alg.equals("InsertionWithSentry")) InsertionWithSentry.sort(a);
-
+        if(alg.equals("Heap")) Heap.sort(a);
+        if(alg.equals("Quick")) Quick.sort(a);
 
         return timer.elapsedTime();
     }
